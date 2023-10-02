@@ -1,13 +1,30 @@
-# Controle de Fluxo - Desafio
+# Desafio Controle de Fluxo em Java
 
+Neste desafio, aplicamos os conceitos de controle de fluxo aprendidos no módulo de Java. O objetivo foi criar um programa que recebesse dois números inteiros como entrada pelo terminal e, com esses números, realizasse uma contagem e exibição dos números em um intervalo específico.
 
-Vamos exercitar todo o conteúdo apresentado no módulo de Controle de Fluxo codificando o seguinte cenário.
+## Como Funciona
 
-O sistema deverá receber dois parâmetros via terminal que representarão dois números inteiros, com estes dois números você deverá obter a quantidade de interações (for) e realizar a impressão no console (System.out.print) dos números incrementados, exemplo:
+1. Primeiro, o programa solicita ao usuário que insira dois números inteiros através do terminal.
 
-Se você passar os números 12 e 30, logo teremos uma interação (for) com 18 ocorrências para imprimir os números, exemplo: "Imprimindo o número 1", "Imprimindo o número 2" e assim por diante.
-Se o primeiro parâmetro for MAIOR que o segundo parâmetro, você deverá lançar a exceção customizada chamada de ParametrosInvalidosException com a segunda mensagem: "O segundo parâmetro deve ser maior que o primeiro"
+2. Em seguida, ele verifica se o primeiro número é menor do que o segundo número.
 
-Crie o projeto DesafioControleFluxo
-Dentro do projeto, crie a classe Contador.java para realizar toda a codificação do nosso programa.
-Dentro do projeto, crie a classe ParametrosInvalidosException que representará a exceção de negócio no sistema
+3. Se o primeiro número for menor que o segundo, o programa entra em ação. Ele inicia um loop `for` para imprimir os números incrementados, começando pelo primeiro número até o segundo número.
+
+4. A cada número impresso, ele exibe uma mensagem no console, como "Imprimindo o número X," onde X é o número atual na sequência.
+
+5. No entanto, se o primeiro número for maior ou igual ao segundo número, o programa toma uma ação diferente. Ele lança uma exceção personalizada que criamos, chamada `ParametrosInvalidosException`, com a mensagem "O segundo parâmetro deve ser maior que o primeiro."
+
+## Estrutura do Projeto
+
+Para organizar nosso código de forma eficiente, seguimos as diretrizes abaixo:
+
+- Começamos criando um projeto chamado "DesafioControleFluxo" em nossa IDE.
+
+- Dentro desse projeto, criamos duas classes:
+    1. `Contador.java`: Esta classe foi responsável por receber os parâmetros, verificar as condições e realizar a contagem e exibição dos números.
+    2. `ParametrosInvalidosException.java`: Esta classe representou uma exceção personalizada que lançamos quando os parâmetros fornecidos eram inválidos.
+
+## Exemplo de Uso
+
+Para ilustrar o funcionamento do programa, supomos que o usuário inseriu os números 12 e 30 como parâmetros. O programa executou um loop com 18 iterações, imprimindo os números de 12 a 30, como mostrado abaixo:
+
