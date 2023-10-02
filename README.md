@@ -1,18 +1,39 @@
-## Getting Started
+# Desafio Controle de Fluxo em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste desafio, aplicamos os conceitos de controle de fluxo aprendidos no módulo de Java. O objetivo foi criar um programa que recebesse dois números inteiros como entrada pelo terminal e, com esses números, realizasse uma contagem e exibição dos números em um intervalo específico.
 
-## Folder Structure
+## Como Funciona
 
-The workspace contains two folders by default, where:
+1. Primeiro, o programa solicita ao usuário que insira dois números inteiros através do terminal.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+2. Em seguida, ele verifica se o primeiro número é menor do que o segundo número.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+3. Se o primeiro número for menor que o segundo, o programa entra em ação. Ele inicia um loop `for` para imprimir os números incrementados, começando pelo primeiro número até o segundo número.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+4. A cada número impresso, ele exibe uma mensagem no console, como "Imprimindo o número X," onde X é o número atual na sequência.
 
-## Dependency Management
+5. No entanto, se o primeiro número for maior ou igual ao segundo número, o programa toma uma ação diferente. Ele lança uma exceção personalizada que criamos, chamada `ParametrosInvalidosException`, com a mensagem "O segundo parâmetro deve ser maior que o primeiro."
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Estrutura do Projeto
+
+Para organizar nosso código de forma eficiente, seguimos as diretrizes abaixo:
+
+- Começamos criando um projeto chamado "DesafioControleFluxo" em nossa IDE.
+
+- Dentro desse projeto, criamos duas classes:
+    1. `Contador.java`: Esta classe foi responsável por receber os parâmetros, verificar as condições e realizar a contagem e exibição dos números.
+    2. `ParametrosInvalidosException.java`: Esta classe representou uma exceção personalizada que lançamos quando os parâmetros fornecidos eram inválidos.
+
+## Exemplo de Uso
+
+Para ilustrar o funcionamento do programa, supomos que o usuário inseriu os números 12 e 30 como parâmetros. O programa executou um loop com 18 iterações, imprimindo os números de 12 a 30, como mostrado abaixo:
+
+- Imprimindo o número 12
+- Imprimindo o número 13
+- Imprimindo o número 14
+...
+- Imprimindo o número 30
+
+No entanto, se o usuário inserisse o primeiro parâmetro como sendo maior ou igual ao segundo parâmetro, o programa teria lançado a exceção personalizada `ParametrosInvalidosException` com a mensagem "O segundo parâmetro deve ser maior que o primeiro."
+
+Este desafio nos permitiu aplicar nossos conhecimentos de controle de fluxo em Java e também criar uma exceção personalizada para lidar com situações específicas. Foi uma ótima oportunidade para consolidar nosso aprendizado. Vamos continuar codificando! 😊🚀
