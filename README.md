@@ -27,11 +27,11 @@ Para organizar nosso código de forma eficiente, seguimos as diretrizes abaixo:
 ## Exemplo de Uso
 
 Para ilustrar o funcionamento do programa, supomos que o usuário inseriu os números 12 e 30 como parâmetros. O programa executou um loop com 18 iterações, imprimindo os números de 12 a 30, como mostrado abaixo:
-Imprimindo o número 12
-Imprimindo o número 13
-Imprimindo o número 14
+- Imprimindo o número 12
+- Imprimindo o número 13
+- Imprimindo o número 14
 ...
-Imprimindo o número 30
+- Imprimindo o número 30
 
 No entanto, se o usuário inserisse o primeiro parâmetro como sendo maior ou igual ao segundo parâmetro, o programa teria lançado a exceção personalizada `ParametrosInvalidosException` com a mensagem "O segundo parâmetro deve ser maior que o primeiro."
 
